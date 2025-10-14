@@ -245,25 +245,24 @@
 # print(f'O Resultado da soma é de: {resultado}')
 
 
-def calcular_desconto(preco, porcentagem):
-    return preco - ( preco * porcentagem / 100 )
-
-valor_final = calcular_desconto(1010, 25)
-print(f'O Valor final com o desconto é de R${valor_final:.2f}')
-
-
-
-
+# def calcular_desconto(preco, porcentagem):
+#     return preco - ( preco * porcentagem / 100 )
+#
+# valor_final = calcular_desconto(1010, 25)
+# print(f'O Valor final com o desconto é de R${valor_final:.2f}')
+#
+#
 
 
+## Modularização
+from funcoes import *
 
+saudacao('Reinaldo')
+print(soma(2, 10))
 
+minha_idade = int(input('Digite sua idade: '))
 
-
-
-
-
-
-
-
-
+if verificar_maioridade(minha_idade):
+    print('Você é maior de idade!')
+else:
+    print('Você é menor de idade!')
