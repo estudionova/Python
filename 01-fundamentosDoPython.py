@@ -254,15 +254,74 @@
 #
 
 
-## Modularização
-from funcoes import *
+# ## Modularização
+# from funcoes import *
+#
+# saudacao('Reinaldo')
+# print(soma(2, 10))
+#
+# minha_idade = int(input('Digite sua idade: '))
+#
+# if verificar_maioridade(minha_idade):
+#     print('Você é maior de idade!')
+# else:
+#     print('Você é menor de idade!')
 
-saudacao('Reinaldo')
-print(soma(2, 10))
 
-minha_idade = int(input('Digite sua idade: '))
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-if verificar_maioridade(minha_idade):
-    print('Você é maior de idade!')
-else:
-    print('Você é menor de idade!')
+# Este sinal serve para comentar um codigo, para que o usuario saiba o que o codigo faz
+
+"""
+Usando 3 aspas podemos comentar varias linhas,
+assim quando o codigo for executado o script pula estas linhas
+"""
+from enum import nonmember
+
+#print("Script executado com sucesso!")
+
+#tipo inteiro: numeros inteiros, sem parte decimal
+inteiro = 42
+print("Inteiro:",inteiro)
+
+#tipo flutuante: numeros reais, quem tem a parte decimal
+flutuante = 42.0
+print("Flutuante:",flutuante)
+
+#tipo complexo: numeros complexos, parte real e parte imaginaria
+complexo = 3 + 4j
+print("Complexo:",complexo)
+
+#tipo string sequencia de caracteres
+texto = "Olá mundo!"
+print("Texto:",texto)
+
+#tipo listas: uma coleção ordenana e mutavel ( o conteudo do objeto pode ser alterado )
+listas = [1,2,3,4,5]
+print("Listas:",listas)
+
+#tipo tupla ( tuple ): uma coleção ordenada e imutavel ( o conteudo do objeto não pode ser alterado )
+tupla = (1,2,3,4,5)
+print("Tupla:",tupla)
+
+#conjuntos uma coleção não ordenada de itens unicos
+conjuntos = {1,2,3,4,5}
+print("Conjuntos:",conjuntos)
+
+#dicionario uma coleção não ordenana de pares chave valor
+dicionario = {"chave:" "valor"}
+print("Dicionario:",dicionario)
+
+#tipo boleano valores verdeiro ou falso
+booleano = True
+print("Booleano:",booleano)
+
+#nenhum um tipo especial que representa a ausencia de valor
+nenhum = None
+print("NomeType ( nome):", None)
+
+
+#Variaveis
+idade = 30
+nome = "Reinaldo"
+print("Nome:", nome, "tem idade:", idade)
